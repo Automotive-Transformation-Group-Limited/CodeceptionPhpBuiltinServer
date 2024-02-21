@@ -1,17 +1,17 @@
 {
-    "name": "codeception/phpbuiltinserver",
+    "name": "atg/codeception-phpbuiltinserver",
     "description": "PhpBuiltinServer extension for Codeception",
     "keywords": ["codeception"],
     "minimum-stability": "stable",
     "license": "MIT",
     "authors": [
         {
-            "name": "tiger-seo",
-            "email": "tiger.seo@gmail.com"
+            "name": "ATG",
+            "email": "tools.services@atg.auto"
         }
     ],
     "require": {
-        "php": ">=8.1.0",
+        "php": ">=8..0",
         "codeception/codeception": "^5.0"
     },
     "require-dev": {
@@ -24,9 +24,9 @@
         }
     },
     "config": {
-        "bin-dir": "bin",
-        "platform": {
-            "php": "8.1.0"
-        }
+        "bin-dir": "bin"
+    },
+    "replace": {
+        "codeception/phpbuiltinserver": "^1.5"
     }
 }
