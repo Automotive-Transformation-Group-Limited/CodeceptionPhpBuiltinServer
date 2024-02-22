@@ -24,17 +24,13 @@ class PhpBuiltinServer extends Extension
 
     public function __construct($config, $options)
     {
-        if (version_compare(PHP_VERSION, '8.1', '<')) {
-            throw new ExtensionException($this, 'Requires PHP built-in web server, available since PHP 8.1.');
-        }
-
         parent::__construct($config, $options);
         $this->validateConfig();
 
-        $this->logDir = Configuration::testsDir() . 'log/';
+        $this->logDir = Configuration::outputDir();
 
         if (array_key_exists('logDir', $this->config)) {
-            $this->logDir = Configuration::testsDir() . $this->config['logDir'] . '/';
+            $this->logDir = Configuration::outputDir() . $this->config['logDir'] . '/';
         }
 
         if (
