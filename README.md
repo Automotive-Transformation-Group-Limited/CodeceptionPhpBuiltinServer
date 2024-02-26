@@ -1,16 +1,16 @@
-PhpBuiltinServer [![Latest Stable](https://poser.pugx.org/codeception/phpbuiltinserver/version.png)](https://packagist.org/packages/codeception/phpbuiltinserver) [![Total Downloads](https://poser.pugx.org/codeception/phpbuiltinserver/downloads.png)](https://packagist.org/packages/codeception/phpbuiltinserver)
+PhpBuiltinServer
 ================
 
 Codeception extension to start and stop PHP built-in web server for your tests.
 
-| Codeception Branch       | PhpBuiltinServer Branch | Status                                                                                                                                               |
-|--------------------------|-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Codeception 1.x**      | **1.1.x**               | [![Build Status](https://secure.travis-ci.org/tiger-seo/PhpBuiltinServer.png?branch=v1.1.x)](http://travis-ci.org/tiger-seo/PhpBuiltinServer)        |
-| **Codeception 2.0**      | **1.2.x**               | [![Build Status](https://secure.travis-ci.org/tiger-seo/PhpBuiltinServer.png?branch=v1.2.x)](http://travis-ci.org/tiger-seo/PhpBuiltinServer)        |
-| **Codeception 2.1, 2.2** | **1.3.x**               | [![Build Status](https://secure.travis-ci.org/tiger-seo/PhpBuiltinServer.png?branch=v1.3.x)](http://travis-ci.org/tiger-seo/PhpBuiltinServer)        |
-| **Codeception 2.3**      | **1.4.x**               | [![Build Status](https://secure.travis-ci.org/tiger-seo/PhpBuiltinServer.png?branch=v1.4.x)](http://travis-ci.org/tiger-seo/PhpBuiltinServer)        |
-| **Codeception 3.0, 4.0** | **1.5.x**               | [![Build Status](https://secure.travis-ci.org/tiger-seo/PhpBuiltinServer.png?branch=master)](http://travis-ci.org/tiger-seo/PhpBuiltinServer)        |
-| **Codeception 5.0** | **master**              | [![Build Status](https://secure.travis-ci.org/tiger-seo/PhpBuiltinServer.png?branch=codeception_5)](http://travis-ci.org/tiger-seo/PhpBuiltinServer) |
+| Codeception Branch       | PhpBuiltinServer Branch |
+|--------------------------|-------------------------|
+| **Codeception 1.x**      | **1.1.x**               |
+| **Codeception 2.0**      | **1.2.x**               |
+| **Codeception 2.1, 2.2** | **1.3.x**               |
+| **Codeception 2.3**      | **1.4.x**               |
+| **Codeception 3.0, 4.0** | **1.5.x**               |
+| **Codeception 5.0**      | **master**              |
 
 ## Minimum requirements
 
@@ -20,7 +20,7 @@ Codeception extension to start and stop PHP built-in web server for your tests.
 ## Installation
 
 1. Install [Codeception](http://codeception.com) via Composer
-2. Add `codeception/phpbuiltinserver: "*"` to your `composer.json`
+2. Add `atg-ltd/codeception-phpbuiltinserver: "*"` to your `composer.json`
 3. Run `composer install`
 4. Include extensions into `codeception.yml` configuration:
 
@@ -45,7 +45,6 @@ extensions:
             documentRoot: tests/_data
             startDelay: 1
             phpIni: /etc/php8/apache2/php.ini
-            logDir: _log
 ```
 
 ### example for projects based on Symfony

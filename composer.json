@@ -1,5 +1,5 @@
 {
-    "name": "atg/codeception-phpbuiltinserver",
+    "name": "atg-ltd/codeception-phpbuiltinserver",
     "description": "PhpBuiltinServer extension for Codeception",
     "keywords": ["codeception"],
     "minimum-stability": "stable",
